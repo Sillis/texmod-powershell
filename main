@@ -1,0 +1,1 @@
+Get-Childitem -path X:\path\to\folder -Filter *.dds -Recurse | where-object {($_.Name -ilike "*_n*") -or ($_.Name -ilike "*_s*")} | Remove-Item -Force -WhatIf
